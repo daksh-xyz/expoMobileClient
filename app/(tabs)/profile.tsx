@@ -1,7 +1,7 @@
 import NavHeader from '@/components/NavHeader';
 import { LinearGradient } from 'expo-linear-gradient';
 import React from 'react';
-import { Dimensions, StyleSheet, Text, View } from 'react-native';
+import { Dimensions, StyleSheet, View } from 'react-native';
 
 export default function Profile() {
   return (
@@ -13,7 +13,6 @@ export default function Profile() {
         style={styles.container}
       >
         <NavHeader text={"Profile"} />
-        <Text>dkjfhdf</Text>
       </LinearGradient>
     </View>
   );

@@ -7,11 +7,9 @@ import HomeIcon from '@/components/ui/HomeIcon';
 import ProfileIcon from '@/components/ui/ProfileIcon';
 import TabBarBackground from '@/components/ui/TabBarBackground';
 import { Colors } from '@/constants/Colors';
-import { useColorScheme } from '@/hooks/useColorScheme';
 import { Dimensions, StyleSheet, Text, View } from 'react-native';
 
 export default function TabLayout() {
-  const colorScheme = useColorScheme();
   const width = Dimensions.get("screen").width > 468 ? '30%' : '100%'
 
   return (
