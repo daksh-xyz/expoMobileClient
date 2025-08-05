@@ -5,8 +5,8 @@ export const appointments: CardProps[] = [
     {
         doctorName: "Dr. Manoj Kumar",
         ProfileIcon: ManojSvg,
-        appointmentDate: "Tuesday, 5 August 2025",
-        appointmentTime: "10:30 PM",
+        appointmentDate: "Wednesday, 6 August 2025",
+        appointmentTime: "10:30 AM",
     },
     {
         doctorName: "Dr. David Smith",
