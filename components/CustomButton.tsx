@@ -1,8 +1,7 @@
-import { Colors } from '@/constants/Colors'
-import { Entypo } from '@expo/vector-icons'
-import React from 'react'
-import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
-import { SvgProps } from 'react-native-svg'
+import React from 'react';
+import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { SvgProps } from 'react-native-svg';
+import ChevronRightCircleIcon from './ui/ChevronRight';
 
 interface CustomButtonProps {
     Icon: React.FC<
@@ -26,7 +25,7 @@ const CustomButton = ({ Icon, text, handlePress }: CustomButtonProps) => {
             <View style={styles.container}>
                 <Icon />
                 <Text>{text}</Text>
-                <Entypo name='chevron-with-circle-right' size={28} color={Colors.light.icon} />
+                <ChevronRightCircleIcon height={24} width={24} color={'#9800beff'} />
             </View>
         </TouchableOpacity>
     )

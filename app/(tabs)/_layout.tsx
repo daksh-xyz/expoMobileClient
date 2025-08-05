@@ -1,10 +1,10 @@
 import { Tabs } from 'expo-router';
 import React from 'react';
 
-import Entypo from '@expo/vector-icons/Entypo';
-import FontAwesome from '@expo/vector-icons/FontAwesome';
-import Ionicons from '@expo/vector-icons/Ionicons';
-
+import AppointmentIcon from '@/components/ui/AppointmentIcon';
+import ExploreIcon from '@/components/ui/ExploreIcon';
+import HomeIcon from '@/components/ui/HomeIcon';
+import ProfileIcon from '@/components/ui/ProfileIcon';
 import TabBarBackground from '@/components/ui/TabBarBackground';
 import { Colors } from '@/constants/Colors';
 import { useColorScheme } from '@/hooks/useColorScheme';
@@ -36,7 +36,7 @@ export default function TabLayout() {
           tabBarIcon: ({ focused, color }) => {
             return (
               <View style={{ alignItems: 'center', height: '100%', justifyContent: 'flex-start', width: '100%' }}>
-                <Entypo name='home' size={24} color={color} />
+                <View><HomeIcon height={24} width={24} color={color} /></View>
                 <Text style={{ color: color, fontSize: 10 }}>Home</Text>
                 <View style={[styles.underline, focused ? { backgroundColor: color } : '']} />
               </View>
@@ -51,7 +51,9 @@ export default function TabLayout() {
           tabBarIcon: ({ focused, color }) => {
             return (
               <View style={{ alignItems: 'center', height: '100%', justifyContent: 'flex-start', width: '100%' }}>
-                <Ionicons name="document-text-outline" size={24} color={color} />
+                <View>
+                  <AppointmentIcon height={24} width={24} color={color} />
+                </View>
                 <Text style={{ color: color, fontSize: 10 }}>Appointments</Text>
                 <View style={[styles.underline, focused ? { backgroundColor: color } : '']} />
               </View>
@@ -66,7 +68,7 @@ export default function TabLayout() {
           tabBarIcon: ({ focused, color }) => {
             return (
               <View style={{ alignItems: 'center', height: '100%', justifyContent: 'flex-start', width: '100%' }}>
-                <FontAwesome name="newspaper-o" size={24} color={color} />
+                <View><ExploreIcon height={24} width={24} color={color} /></View>
                 <Text style={{ color: color, fontSize: 10 }}>Explore</Text>
                 <View style={[styles.underline, focused ? { backgroundColor: color } : '']} />
               </View>
@@ -81,7 +83,9 @@ export default function TabLayout() {
           tabBarIcon: ({ focused, color }) => {
             return (
               <View style={{ alignItems: 'center', height: '100%', justifyContent: 'flex-start', width: '100%' }}>
-                <Ionicons name="person-outline" size={24} color={color} />
+                <View>
+                  <ProfileIcon color={color} />
+                </View>
                 <Text style={{ color: color, fontSize: 10 }}>Profile</Text>
                 <View style={[styles.underline, focused ? { backgroundColor: color } : '']} />
               </View>

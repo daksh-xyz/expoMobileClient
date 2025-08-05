@@ -1,7 +1,7 @@
-import { AntDesign } from '@expo/vector-icons'
 import { router } from 'expo-router'
 import React from 'react'
 import { Text, TouchableOpacity, View } from 'react-native'
+import BackArrow from './ui/BackArrow'
 
 interface NavHeaderProps {
     size?: number,
@@ -25,7 +25,7 @@ const NavHeader = ({ size = 24, color = "black", text, flexType = "row" }: NavHe
             <TouchableOpacity
                 onPress={() => router.replace('..')}
             >
-                <AntDesign name="arrowleft" size={size} color={color} />
+                <BackArrow height={24} width={24} color={color} />
             </TouchableOpacity>
             <Text style={[{ fontWeight: '800', fontSize: 20 }, flexType === "column" ? { paddingTop: 12 } : '']} selectable={false}>{text}</Text>
         </View>
